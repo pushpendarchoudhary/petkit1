@@ -77,8 +77,6 @@ public class MainActivity extends AppCompatActivity {
                 String personId = acct.getId();
                 Uri personPhoto = acct.getPhotoUrl();
             }
-            startActivity(new Intent(MainActivity.this, homescreen.class));
-
             // Signed in successfully, show authenticated UI.
             updateUI(account);
         } catch (ApiException e) {
